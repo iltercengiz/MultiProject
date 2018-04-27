@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3672A9F02093972600F9C816 /* AwesomeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3672A9ED2093969500F9C816 /* AwesomeAPI.framework */; };
+		3672A9F12093972600F9C816 /* AwesomeAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3672A9ED2093969500F9C816 /* AwesomeAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		367F5803208B98170003778D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F5802208B98170003778D /* AppDelegate.swift */; };
 		367F5805208B98170003778D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F5804208B98170003778D /* ViewController.swift */; };
 		367F5808208B98170003778D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367F5806208B98170003778D /* Main.storyboard */; };
@@ -18,6 +20,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3672A9EC2093969500F9C816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3672A9E72093969500F9C816 /* AwesomeAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 367F583D208B9BF10003778D;
+			remoteInfo = AwesomeAPI;
+		};
+		3672A9EE2093969500F9C816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3672A9E72093969500F9C816 /* AwesomeAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 367F5846208B9BF10003778D;
+			remoteInfo = AwesomeAPITests;
+		};
+		3672A9F22093972600F9C816 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3672A9E72093969500F9C816 /* AwesomeAPI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 367F583C208B9BF10003778D;
+			remoteInfo = AwesomeAPI;
+		};
 		367F5817208B98180003778D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 367F57F7208B98170003778D /* Project object */;
@@ -34,7 +57,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3672A9E5209392AE00F9C816 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3672A9F12093972600F9C816 /* AwesomeAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3672A9E72093969500F9C816 /* AwesomeAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AwesomeAPI.xcodeproj; path = ../AwesomeAPI/AwesomeAPI.xcodeproj; sourceTree = "<group>"; };
 		367F57FF208B98170003778D /* TheNextBigThingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheNextBigThingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		367F5802208B98170003778D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		367F5804208B98170003778D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3672A9F02093972600F9C816 /* AwesomeAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +115,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3672A9E62093954E00F9C816 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				3672A9E72093969500F9C816 /* AwesomeAPI.xcodeproj */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		3672A9E82093969500F9C816 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3672A9ED2093969500F9C816 /* AwesomeAPI.framework */,
+				3672A9EF2093969500F9C816 /* AwesomeAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		367F57F6208B98170003778D = {
 			isa = PBXGroup;
 			children = (
 				367F5801208B98170003778D /* TheNextBigThingApp */,
 				367F5819208B98180003778D /* TheNextBigThingAppTests */,
 				367F5824208B98180003778D /* TheNextBigThingAppUITests */,
+				3672A9E62093954E00F9C816 /* Vendor */,
 				367F5800208B98170003778D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,10 +195,12 @@
 				367F57FB208B98170003778D /* Sources */,
 				367F57FC208B98170003778D /* Frameworks */,
 				367F57FD208B98170003778D /* Resources */,
+				3672A9E5209392AE00F9C816 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3672A9F32093972600F9C816 /* PBXTargetDependency */,
 			);
 			name = TheNextBigThingApp;
 			productName = TheNextBigThingApp;
@@ -218,6 +277,12 @@
 			mainGroup = 367F57F6208B98170003778D;
 			productRefGroup = 367F5800208B98170003778D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3672A9E82093969500F9C816 /* Products */;
+					ProjectRef = 3672A9E72093969500F9C816 /* AwesomeAPI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				367F57FE208B98170003778D /* TheNextBigThingApp */,
@@ -226,6 +291,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3672A9ED2093969500F9C816 /* AwesomeAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AwesomeAPI.framework;
+			remoteRef = 3672A9EC2093969500F9C816 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3672A9EF2093969500F9C816 /* AwesomeAPITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AwesomeAPITests.xctest;
+			remoteRef = 3672A9EE2093969500F9C816 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		367F57FD208B98170003778D /* Resources */ = {
@@ -284,6 +366,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3672A9F32093972600F9C816 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AwesomeAPI;
+			targetProxy = 3672A9F22093972600F9C816 /* PBXContainerItemProxy */;
+		};
 		367F5818208B98180003778D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 367F57FE208B98170003778D /* TheNextBigThingApp */;
@@ -433,6 +520,7 @@
 		367F582B208B98180003778D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8EBW8LF2M;
@@ -451,6 +539,7 @@
 		367F582C208B98180003778D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8EBW8LF2M;
