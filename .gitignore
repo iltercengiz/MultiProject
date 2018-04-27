@@ -36,6 +36,8 @@ xcuserdata/
 
 
 # Carthage - Refactored to standalone file
+Carthage
+Cartfile.resolved
 
 # fastlane
 #

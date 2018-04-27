@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3672AA0C2093AB4700F9C816 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3672AA0B2093AB4700F9C816 /* Alamofire.framework */; };
 		36733A4E20938AC1004EE9E8 /* AwesomeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36733A4D20938AC1004EE9E8 /* AwesomeAPIClient.swift */; };
 		367F5847208B9BF10003778D /* AwesomeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367F583D208B9BF10003778D /* AwesomeAPI.framework */; };
 		367F584C208B9BF10003778D /* AwesomeAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F584B208B9BF10003778D /* AwesomeAPITests.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3672AA0B2093AB4700F9C816 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Vendor/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		36733A4D20938AC1004EE9E8 /* AwesomeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeAPIClient.swift; sourceTree = "<group>"; };
 		367F583D208B9BF10003778D /* AwesomeAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomeAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		367F5840208B9BF10003778D /* AwesomeAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeAPI.h; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3672AA0C2093AB4700F9C816 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +55,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3672AA0A2093AB2100F9C816 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3672AA0B2093AB4700F9C816 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		367F5833208B9BF10003778D = {
 			isa = PBXGroup;
 			children = (
 				367F583F208B9BF10003778D /* AwesomeAPI */,
 				367F584A208B9BF10003778D /* AwesomeAPITests */,
+				3672AA0A2093AB2100F9C816 /* Frameworks */,
 				367F583E208B9BF10003778D /* Products */,
 			);
 			sourceTree = "<group>";
