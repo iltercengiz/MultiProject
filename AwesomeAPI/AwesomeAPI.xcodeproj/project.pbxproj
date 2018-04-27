@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36733A4E20938AC1004EE9E8 /* AwesomeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36733A4D20938AC1004EE9E8 /* AwesomeAPIClient.swift */; };
 		367F5847208B9BF10003778D /* AwesomeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367F583D208B9BF10003778D /* AwesomeAPI.framework */; };
 		367F584C208B9BF10003778D /* AwesomeAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F584B208B9BF10003778D /* AwesomeAPITests.swift */; };
 		367F584E208B9BF10003778D /* AwesomeAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 367F5840208B9BF10003778D /* AwesomeAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36733A4D20938AC1004EE9E8 /* AwesomeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwesomeAPIClient.swift; sourceTree = "<group>"; };
 		367F583D208B9BF10003778D /* AwesomeAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomeAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		367F5840208B9BF10003778D /* AwesomeAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeAPI.h; sourceTree = "<group>"; };
 		367F5841208B9BF10003778D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		367F583F208B9BF10003778D /* AwesomeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				36733A4D20938AC1004EE9E8 /* AwesomeAPIClient.swift */,
 				367F5840208B9BF10003778D /* AwesomeAPI.h */,
 				367F5841208B9BF10003778D /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					367F583C208B9BF10003778D = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					367F5845208B9BF10003778D = {
 						CreatedOnToolsVersion = 9.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36733A4E20938AC1004EE9E8 /* AwesomeAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		367F5852208B9BF10003778D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = info.iltercengiz.iOS.AwesomeAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		367F5853208B9BF10003778D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		367F5855208B9BF10003778D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8EBW8LF2M;
 				INFOPLIST_FILE = AwesomeAPITests/Info.plist;
@@ -407,6 +416,7 @@
 		367F5856208B9BF10003778D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P8EBW8LF2M;
 				INFOPLIST_FILE = AwesomeAPITests/Info.plist;
