@@ -15,7 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        AwesomeAPIClient.shared.testRun()
+        AwesomeAPIClient.shared.testRun(completion: {
+            // Do something when we get the data
+        })
     }
 
     override func didReceiveMemoryWarning() {
